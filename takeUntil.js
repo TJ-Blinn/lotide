@@ -21,3 +21,38 @@ let resultValue = array.slice(0, index);
 console.log(resultValue);
 return resultValue;
 */
+
+/////////////////// TESTING FUNCTIONS
+
+const eqArrays = (a, b) => {
+  // boolean value
+  if (a.length === b.length) {
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+  return false;
+};
+
+const assertArraysEqual = function (arr1, arr2) {
+  // print out resuts
+  if (eqArrays(arr1, arr2)) {
+    console.log(`✅✅✅ Assertion Passed`); // based on the assertion
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed`);
+  }
+};
+
+assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1, 5]), false); // => should FAIL
+
+/// TEST CASES BELOW
+const results1 = takeUntil(array, (n) => n > 3);
+console.log("RESULTS 1; " + results1);
+
+const expectedResults1 = [-6, -3, -2, 1, 2, 3];
+
+assertArraysEqual(expectedResults1, results1); // what it should return Vs. what it is actually returning
