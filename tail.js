@@ -18,15 +18,17 @@ const tail = function (arr) {
   }
 };
 
+module.exports = tail;
+
 //console.log(tail([1, 2, 3, 4, 5]));
 
-// Test Case 1: Check the returned array elements
-const result = tail(["Hello", "Lighthouse", "Labs"]);
+// // Test Case 1: Check the returned array elements
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
 
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
-// ************ NOTE: Our assertEqual function is too simple to compare array values. JavaScript doesn't allow the use of === or == to compare two arrays.
+// assertEqual(result.length, 2); // ensure we get back two elements
+// assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
+// assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+// // ************ NOTE: Our assertEqual function is too simple to compare array values. JavaScript doesn't allow the use of === or == to compare two arrays.
 
 //Test Case: Check the original array
 // const words = ["Yo Yo", "Lighthouse", "Labs"];
