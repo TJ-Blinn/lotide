@@ -36,6 +36,8 @@ const without = function (arr, arrToRemove) {
   return result;
 };
 
+module.exports = without;
+
 const withoutResult = without([1, 2, 3], [1]);
 console.log("without Results", withoutResult);
 //console.log(assertEqual(withoutResult, [2, 3])); // withoutResult now = actual parameter passed into assertEqual

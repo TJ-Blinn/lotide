@@ -11,6 +11,8 @@ const map = function (array, callback) {
   return results;
 };
 
+module.exports = map;
+
 // assertArraysEqual.js to test our new map function
 
 const eqArrays = (a, b) => {

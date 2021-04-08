@@ -44,6 +44,8 @@ const countLetters = function (allItems) {
 
 console.log(countLetters("lighthouse in the house"));
 
+module.exports = countLetters;
+
 /// TEST CASES BELOW
 const results1 = countLetters("lighthouse in the house");
 console.log(results1);

@@ -12,6 +12,9 @@ const takeUntil = (array, callback) => {
   }
   return result;
 };
+
+module.exports = takeUntil;
+
 let array = [-6, -3, -2, 1, 2, 3, 6, 8, 9];
 console.log(takeUntil(array, (n) => n > 3));
 
